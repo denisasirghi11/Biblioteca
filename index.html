@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Formular de înregistrare</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="formular">
+    <h2>Formularul de înregistrare a cititorului</h2>
+
+    <label for="nume">Nume, Prenume:</label>
+    <input type="text" id="nume" name="nume">
+
+    <label for="data">Data nașterii:</label>
+    <input type="date" id="data" name="data">
+
+    <label>Genul:</label>
+    <input type="radio" id="gen_m" name="gen" value="M"><label for="gen_m">M</label>
+    <input type="radio" id="gen_f" name="gen" value="F"><label for="gen_f">F</label>
+
+    <label for="regiune">Regiunea:</label>
+    <select id="regiune" name="regiune">
+      <option value="nord">Nord</option>
+      <option value="centru">Centru</option>
+      <option value="sud">Sud</option>
+    </select>
+
+    <label for="reguli">Regulile pentru cititori:</label>
+    <textarea id="reguli" rows="3" cols="30">Accesul în bibliotecă este liber. Daca doriti sa accesati resurse ce nu sunt indicate, ne contactati.</textarea>
+
+    <div class="accept">
+      <input type="checkbox" id="accept" name="accept">
+      <label for="accept">Acceptați regulile</label>
+    </div>
+
+    <button>Înregistrează</button>
+  </div>
+</body>
+</html>
